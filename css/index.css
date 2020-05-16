@@ -1,0 +1,47 @@
+.container {
+    height: 100vh;
+}
+
+.whoami {
+    height: 100vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.avatar img {
+    width: 25vw;
+}
+
+.mynameis {
+    font-size: 2em;
+}
+
+.profession {
+    font-size: 1.5em;
+}
+
+
+.header_wrapper {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header_item {
+    padding: 10px;
+}
+
+.active {
+    background: #E7E7E7;
+}
+
+header a, header a:visited, header a:active {
+    color: #777777;
+}
