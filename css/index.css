@@ -1,6 +1,10 @@
-.container {
-    height: 100vh;
+body {
+    background: #F5F5F5;
 }
+
+/* .container {
+    height: 100vh;
+} */
 
 .mynameis {
     height: 95vh;
@@ -79,13 +83,14 @@ header a, header a:visited, header a:active {
 .desc {
     width: 70%;
     margin: auto;
+    padding-top: 100px;
 }
 
 .desc .title {
     text-transform: uppercase;
     color: #373432;
     font-size: 50px;
-    margin-top: 15px;
+    /* margin-top: 15px; */
 }
 
 .desc .title .line {
@@ -105,4 +110,36 @@ header a, header a:visited, header a:active {
 
 .text strong {
     color: black;
+}
+
+
+
+
+/* PROJECTS_CELL */
+.projects {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* align-items: stretch; */
+    width: 100%;
+}
+
+.portfolio .text {
+    margin-bottom: 40px;
+}
+
+.project {
+    width: 25%;
+}
+
+.project img {
+    width: 100%;
+}
+
+/* PROJECTS_CELL */
+
+
+footer {
+    text-align: center;
+    padding: 50px 0;
 }

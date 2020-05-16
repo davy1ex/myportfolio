@@ -11,56 +11,129 @@
     
 </head>
 <body>
-    <div class="container mynameis">
-        <div class="mynameis_wrapper">
-            <div class="avatar">
-                <img src="/img/avatar.jpg" alt="">
+    <a name="main">
+        <div class="container mynameis">
+            <div class="mynameis_wrapper">
+                <div class="avatar">
+                    <img src="/img/avatar.jpg" alt="">
+                </div>
+                <!-- <div class="title">davy1ex</div> -->
+                <div class="myname">Давыдов Алексей</div>
+                <div class="profession">Веб разработчик</div>
             </div>
-            <!-- <div class="title">davy1ex</div> -->
-            <div class="myname">Давыдов Алексей</div>
-            <div class="profession">Веб разработчик</div>
         </div>
-    </div>
+    </a>
 
     <header id="header">
         <div class="header_wrapper">        
-            <a href="#"><div class="header_item active">Главная</div></a>
-            <a href="#"><div class="header_item">Обо мне</div></a>
-            <a href="#"><div class="header_item">Резюме</div></a>
-            <a href="#"><div class="header_item">Услуги</div></a>
-            <a href="#"><div class="header_item">Портфолио</div></a>
-            <a href="#"><div class="header_item">Контакты</div></a>
+            <a href="#main"><div class="header_item active">Главная</div></a>
+            <a href="#about_me"><div class="header_item">Обо мне</div></a>
+            <!-- <a href="#"><div class="header_item">Резюме</div></a> -->
+            <!-- <a href="#"><div class="header_item">Услуги</div></a> -->
+            <a href="#portfolio"><div class="header_item">Портфолио</div></a>
+            <a href="#contacts"><div class="header_item">Контакты</div></a>
         </div>
-
-
     </header>
 
-    <div class="container content desc">
-        <div class="title">
-            <span class="line">Обо мне</span>
-            <!-- <div class="line"></div> -->
+    <a name="about_me">
+        <div class="container content desc">
+            <div class="title">
+                <span class="line">Обо мне</span>
+                <!-- <div class="line"></div> -->
+            </div>
+
+            <div class="text">
+                Вы находитесь на моей странице портфолио. Тут можно найти информацию о моих услугах, опыте и проектах.
+            </div>
+
+            <div class="text">
+                <br><strong>Специализация</strong>: Программирование сайтов-визиток / лендингов / сайтов под ключ / Web-сервисов. Адаптивная вёрстка. <br> <br>
+
+                <strong>Опыт работы</strong>: более 2 лет. <br> <br>
+
+                <strong>Используемые технологии</strong>: HTML, CSS, JavaScript (Vue.js, Node.js), PHP (Symfony), MySQL, AJAX, Python (Django, Flask).
+            </div>
         </div>
+    </a>
 
-        <div class="text">
-            Вы находитесь на моей странице портфолио. Тут можно найти информацию о моих услугах, опыте и проектах.
+    <a name="portfolio">
+        <div class="container content portfolio desc">
+            
+                <div class="title">
+                    <span class="line">Портфолио</span>
+                </div>
+
+                <div class="text">
+                    Внизу предоставленны проекты, над которыми я имел честь работать. Какие-то были сделаны ради собтсвенного интереса, а какие-то на заказ
+                </div>
+
+                <div class="projects">
+                    <div class="project">
+                        <div class="image_preview"><img src="img/comingsoon.jpg" alt="comingsoon"></div>
+                    </div>
+
+                    <div class="project">
+                        <div class="image_preview"><img src="img/comingsoon_invert.jpg" alt="comingsoon"></div>
+                    </div>
+
+                    <div class="project">
+                        <div class="image_preview"><img src="img/comingsoon.jpg" alt="comingsoon"></div>
+                    </div>
+
+                    <div class="project">
+                        <div class="image_preview"><img src="img/comingsoon_invert.jpg" alt="comingsoon"></div>
+                    </div>
+
+                    <div class="project">
+                        <div class="image_preview"><img src="img/comingsoon_invert.jpg" alt="comingsoon"></div> 
+                    </div>
+
+                    <div class="project">
+                        <div class="image_preview"><img src="img/comingsoon.jpg" alt="comingsoon"></div>
+                    </div>
+
+                    <div class="project">
+                        <div class="image_preview"><img src="img/comingsoon_invert.jpg" alt="comingsoon"></div>
+                    </div>
+
+                    <div class="project">
+                        <div class="image_preview"><img src="img/comingsoon.jpg" alt="comingsoon"></div>
+                    </div>
+
+                    <div class="project">
+                        <div class="image_preview"><img src="img/comingsoon.jpg" alt="comingsoon"></div>
+                    </div>
+
+                    <div class="project">
+                        <div class="image_preview"><img src="img/comingsoon_invert.jpg" alt="comingsoon"></div>
+                    </div>
+
+                    <div class="project">
+                        <div class="image_preview"><img src="img/comingsoon.jpg" alt="comingsoon"></div>
+                    </div>
+
+                    <div class="project">
+                        <div class="image_preview"><img src="img/comingsoon_invert.jpg" alt="comingsoon"></div>
+                    </div>
+                </div>
+            
         </div>
+    </a>
 
-        <div class="text">
-            <br><strong>Специализация</strong>: Программирование сайтов-визиток / лендингов / сайтов под ключ / Web-сервисов. Адаптивная вёрстка. <br> <br>
+    <a name="contacts">
+        <div class="container desc contacts">
+            <div class="title">
+                <span class="line">Связаться со мною</span>
 
-            <strong>Опыт работы</strong>: более 2 лет. <br> <br>
-
-            <strong>Используемые технологии</strong>: HTML, CSS, JavaScript (Vue.js, Node.js), PHP (Symfony), MySQL, AJAX, Python (Django, Flask).
+                <div class="text">
+                    <a href="vk.com/richlex">VK</a> <br>
+                    <a href="vk.com/richlex">MAIL</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </a>
 
-    <div class="container content">
-    SKILLS
-    </div>
-
-    <div class="container">
-    FOOTER
-    </div>
+    <footer>© 2020 by davy1ex</footer>
 
 
     <script src="js/index.js"></script>
