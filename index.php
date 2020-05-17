@@ -26,7 +26,7 @@
 
     <header id="header">
         <div class="header_wrapper">        
-            <a href="#main"><div class="header_item active">Главная</div></a>
+            <div class="header_item active"><a href="#main">Главная</a></div>
             <a href="#about_me"><div class="header_item">Обо мне</div></a>
             <!-- <a href="#"><div class="header_item">Резюме</div></a> -->
             <!-- <a href="#"><div class="header_item">Услуги</div></a> -->

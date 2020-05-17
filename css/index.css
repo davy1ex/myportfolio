@@ -31,7 +31,10 @@ body {
 
 .myname {
     font-size: 4em;
+    text-align: center;
 }
+
+
 
 .profession {
     font-size: 2em;
@@ -57,7 +60,15 @@ header {
 }
 
 .header_item {
-    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 15px;
+}
+
+.header_item:hover {
+    background: #E7E7E7;
 }
 
 .active {
@@ -90,15 +101,9 @@ header a, header a:visited, header a:active {
     text-transform: uppercase;
     color: #373432;
     font-size: 50px;
-    /* margin-top: 15px; */
 }
 
 .desc .title .line {
-    /* margin-left: 5px;;
-    width: 90px;
-    height: 5px;
-
-    background: black; */
     border-bottom: 5px solid black;
 }
 
@@ -142,4 +147,42 @@ header a, header a:visited, header a:active {
 footer {
     text-align: center;
     padding: 50px 0;
+}
+
+
+
+
+/* FOR PHONE */
+@media only screen and (max-width: 768px) {
+    .avatar img {
+        width: 40vw;
+        border-radius: 100%;
+    }
+    .myname {
+        font-size: 3em;
+    }
+    .mynameis_wrapper {
+        width: 95%;
+    }
+
+    .header_wrapper {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .header_item {
+        height: 100%;
+        padding: 0 18px;
+    }
+
+
+    .desc .title {
+        text-transform: uppercase;
+        color: #373432;
+        font-size: 40px;
+    }
+
+
+    .project {
+        width: 95%;
+    }
 }
