@@ -9,5 +9,6 @@ $projects = mysqli_fetch_all($results, MYSQLI_ASSOC);
 // print_r($projects);
 
 foreach ($projects as $project) {
-    echo $project['title'] . "<br>";
+    echo $project['title'] . ' ' . '<a href="' . '/admin/remove_project.php?project_id=' . $project['id'] . '" . >x</a>'; 
+    echo "<br>";
 }
