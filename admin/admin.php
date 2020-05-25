@@ -12,3 +12,14 @@ foreach ($projects as $project) {
     echo $project['title'] . ' ' . '<a href="' . '/admin/remove_project.php?project_id=' . $project['id'] . '" . >x</a>'; 
     echo "<br>";
 }
+
+
+?>
+
+<form action="./add_project.php">
+    <input type="text" name="title" placeholder="titile">
+    <input type="text" name="title" placeholder="photo">
+    <input type="text" name="title" placeholder="github">
+    <input type="text" name="title" placeholder="description">
+    <button type="submit">add</button>
+</form>
