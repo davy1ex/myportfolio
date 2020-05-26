@@ -1,5 +1,5 @@
 <?php 
-include("../configDB.php");
+include("../../configDB.php");
 
 $title = $_GET['title'];
 $photo = $_GET['photo'];
@@ -12,7 +12,7 @@ VALUES ('$title', '$photo', '$description', '$github')";
 $result = mysqli_query($link, $sql);
 
 if ($result) {
-    header("Location: ./admin.php");
+    header("Location: ../admin.php");
 }
 
 else {

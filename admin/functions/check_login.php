@@ -1,6 +1,6 @@
 <?php
 if ($_POST['username'] != "") {
-    include("../configDB.php");
+    include("../../configDB.php");
     
     $username = $_POST['username'];
     $password = $_POST['password'];
@@ -12,7 +12,7 @@ if ($_POST['username'] != "") {
 
     if ($user) {
         setcookie('user', $user['username'], time()+3600, "/");
-        header("Location: ./admin.php");
+        header("Location: ../admin.php");
 
     }
     
@@ -22,5 +22,5 @@ if ($_POST['username'] != "") {
 else {
     $errors = array("input login");
     // array_push($errors, "");
-    header("Location: ./login.php");
+    header("Location: ../login.php");
 }

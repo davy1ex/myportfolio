@@ -8,7 +8,7 @@
 <body>
 <div class="container">
     <div class="card-header">Login</div>    
-      <form method="post" action="check_login.php">
+      <form method="post" action="functions/check_login.php">
         <div class="username">
           <label>Username</label>
           <input type="text" name="username">
