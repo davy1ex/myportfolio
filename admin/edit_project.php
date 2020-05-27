@@ -6,9 +6,16 @@
     <title>Edit Project</title>
 </head>
 <body>
-    <?php 
-        $project_id = $_GET['project_id'];
+    <h1>Edit project</h1>
+    <?php         
         include("../configDB.php");
+
+        if ($_COOKIE['user'] != "admin") {
+            header("Location: /admin/login.php");
+        }
+
+        $project_id = $_GET['project_id'];
+
         $sql = "SELECT * FROM `projects` WHERE `id`='$project_id'";
         $results = mysqli_query($link, $sql);
         $project = mysqli_fetch_assoc($results);

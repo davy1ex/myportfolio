@@ -11,6 +11,8 @@
     
 </head>
 <body>
+    <?php include 'admin/header.php'; ?>
+
     <a name="main">
         <div class="container mynameis">
             <div class="mynameis_wrapper">

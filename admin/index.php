@@ -1,4 +1,7 @@
 <?php
+if ($_COOKIE['user'] != "admin") {
+    header("Location: /admin/login.php");
+}
 echo "hello, " . $_COOKIE['user'];
 echo "<hr>";
 
