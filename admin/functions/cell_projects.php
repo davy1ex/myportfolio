@@ -12,8 +12,8 @@ $projects = mysqli_fetch_all($results, MYSQLI_ASSOC);
         
         </div>
         <div class="name">
-            <?php $project['title']; ?>
+            <?php echo $project['title']; ?>
         </div>
     </div>    
-<? endforeach ?>
+<?php endforeach ?>
 </div>
