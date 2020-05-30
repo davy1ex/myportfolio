@@ -6,5 +6,5 @@ $sql = "DELETE FROM `projects` WHERE `id`=" . "'" . (int)$_GET['project_id'] . "
 $result = mysqli_query($link, $sql);
 
 if ($result) {
-    header("Location: ../admin.php");
+    header("Location: ../index.php");
 }

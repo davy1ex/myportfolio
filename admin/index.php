@@ -17,9 +17,14 @@ foreach ($projects as $project) {
 }
 ?>
 
-<form action="/admin/functions/add_project.php">
-    <input type="text" name="title" placeholder="title">
-    <input type="text" name="photo" placeholder="photo">
+<form enctype="multipart/form-data" action="/admin/functions/add_project.php" method="POST" >
+    <input type="text" name="title" placeholder="title">    
+
+    <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+    <!-- Название элемента input определяет имя в массиве $_FILES -->
+    <input name="userfile" type="file" />
+    
+    
     <input type="text" name="github" placeholder="github">
     <input type="text" name="description" placeholder="description">
     <button type="submit">add</button>
