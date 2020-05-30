@@ -68,8 +68,10 @@
                 <div class="text">
                     Внизу предоставленны проекты, над которыми я имел честь работать. Какие-то были сделаны ради собтсвенного интереса, а какие-то на заказ
                 </div>
+                <?php include 'admin/functions/projects.php'; ?>
+                <!-- <div class="projects">
+                    
 
-                <div class="projects">
                     <div class="project">
                         <div class="image_preview"><img src="img/comingsoon.jpg" alt="comingsoon"></div>
                     </div>
@@ -117,7 +119,7 @@
                     <div class="project">
                         <div class="image_preview"><img src="img/comingsoon_invert.jpg" alt="comingsoon"></div>
                     </div>
-                </div>
+                </div> -->
             
         </div>
     </a>

@@ -20,7 +20,7 @@
         $results = mysqli_query($link, $sql);
         $project = mysqli_fetch_assoc($results);
     ?>
-    <form action="/admin/functions/update_project.php" enctype="multipart/form-data" method="POST">
+    <form enctype="multipart/form-data" action="/admin/functions/update_project.php"  method="POST">
         <input type="hidden" name="project_id" value=<?php echo $project_id ?>>
         <div class="title">
             <div class="label">title</div>
@@ -30,7 +30,7 @@
         <div class="photo">
             <div class="label">photo</div>
             <!-- <div class="input"><input type="text" name="photo" value=<?php echo $project['photo'] ?>></div> -->
-            <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+            <input type="hidden" name="MAX_FILE_SIZE" value="300000" />
             <!-- Название элемента input определяет имя в массиве $_FILES -->
             <input name="userfile" type="file" />
         </div>

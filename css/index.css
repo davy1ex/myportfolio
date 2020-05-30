@@ -123,9 +123,9 @@ header a, header a:visited, header a:active {
 /* PROJECTS_CELL */
 .projects {
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
-    /* align-items: stretch; */
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
