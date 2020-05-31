@@ -6,14 +6,18 @@ if ($_POST['username'] != "") {
     $password = $_POST['password'];
     
     // make sql request\
-    $sql = "SELECT * FROM `users` WHERE `username`='$username' AND `password` = '$password'";
+    $sql = "SELECT * FROM `users` WHERE `username`='$username'";
     $result = mysqli_query($link, $sql);
     $user = mysqli_fetch_assoc($result);
 
-    if ($user) {
+    if ($user['password'] == md5($password)) {
         setcookie('user', $user['username'], time()+3600, "/");
         header("Location: /admin/index.php");
 
+    }
+
+    else {
+        echo "bad password";
     }
     
 
@@ -21,6 +25,5 @@ if ($_POST['username'] != "") {
 
 else {
     $errors = array("input login");
-    // array_push($errors, "");
     header("Location: /admin/login.php");
 }
