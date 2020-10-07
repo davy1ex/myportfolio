@@ -65,6 +65,10 @@ header {
     align-items: center;
     height: 100%;
     padding: 0 15px;
+
+}
+.header_item img {
+    width: 30px;
 }
 
 .header_item:hover {

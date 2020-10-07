@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>davy1ex</title>
+    
+    <script src="/js/live.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
@@ -28,12 +30,16 @@
 
     <header id="header">
         <div class="header_wrapper">        
-            <div class="header_item active"><a href="#main">Главная</a></div>
-            <a href="#about_me"><div class="header_item">Обо мне</div></a>
-            <!-- <a href="#"><div class="header_item">Резюме</div></a> -->
-            <!-- <a href="#"><div class="header_item">Услуги</div></a> -->
-            <a href="#portfolio"><div class="header_item">Портфолио</div></a>
-            <a href="#contacts"><div class="header_item">Контакты</div></a>
+            <!-- <div class="header_item active"><a href="#main">Главная</a></div>
+            <a href="#about_me"><div class="header_item">Обо мне</div></a> -->            
+            <!-- <a href="#portfolio"><div class="header_item">Портфолио</div></a>
+            <a href="#contacts"><div class="header_item">Контакты</div></a> -->
+
+
+            <div class="header_item icon active"><a href="#main"><img src="/img/icons/home.svg" alt=""></a></div>
+            <div class="header_item icon"><a href="#about_me"><img src="/img/icons/user.svg" alt=""></a></div>
+            <div class="header_item icon"><a href="#portfolio"><img src="/img/icons/portfolio.svg" alt=""></a></div>
+            <div class="header_item icon"><a href="#contacts"><img src="/img/icons/contact.svg" alt=""></a></div>
         </div>
     </header>
 
