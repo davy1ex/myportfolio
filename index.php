@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>davy1ex</title>
     
-    <script src="/js/live.js"></script>
+    
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
 
-    
+    <script src="/js/live.js"></script>
 </head>
 <body>
     <?php include 'admin/header.php'; ?>
