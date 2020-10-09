@@ -15,3 +15,19 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+
+function response_header() {
+  if ($(window).width() < 450) {
+    $('.header_text').hide()
+    $('.header_img').show()
+  } 
+
+  else {
+    $('.header_text').show()
+    $('.header_img').hide()
+  }
+}
+
+$(window).resize(response_header)
+response_header()

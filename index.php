@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
 
+    <script src="/js/jquery.js"></script>>
     <script src="/js/live.js"></script>
 </head>
 <body>
@@ -36,10 +37,10 @@
             <a href="#contacts"><div class="header_item">Контакты</div></a> -->
 
 
-            <div class="header_item icon active"><a href="#main"><img src="/img/icons/home.svg" alt=""></a></div>
-            <div class="header_item icon"><a href="#about_me"><img src="/img/icons/user.svg" alt=""></a></div>
-            <div class="header_item icon"><a href="#portfolio"><img src="/img/icons/portfolio.svg" alt=""></a></div>
-            <div class="header_item icon"><a href="#contacts"><img src="/img/icons/contact.svg" alt=""></a></div>
+            <div class="header_item icon active"><a href="#main"><img class="header_img" src="/img/icons/home.svg" alt=""><div class="header_text">Главная</div></a></div>
+            <div class="header_item icon"><a href="#about_me"><img class="header_img" src="/img/icons/info.svg" alt=""><div class="header_text">Обо мне</div></a></div>
+            <div class="header_item icon"><a href="#portfolio"><img class="header_img" src="/img/icons/portfolio.svg" alt=""><div class="header_text">Портфолио</div></a></div>
+            <div class="header_item icon"><a href="#contacts"><img class="header_img" src="/img/icons/email.svg" alt=""><div class="header_text">Контакты</div></a></div>
         </div>
     </header>
 
@@ -133,7 +134,7 @@
     <a name="contacts">
         <div class="container desc contacts">
             <div class="title">
-                <span class="line">Связаться со мною</span>
+                <span class="line">Контакты</span>
 
                 <div class="text">
                     <a href="vk.com/richlex">VK</a> <br>
