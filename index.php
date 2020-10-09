@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>davy1ex</title>
-    
-    
+    <link rel="shortcut icon" href="/img/avatar.jpg" type="image/jpg">
+
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
@@ -30,9 +30,9 @@
     </a>
 
     <header id="header">
-        <div class="header_wrapper">        
+        <div class="header_wrapper">
             <!-- <div class="header_item active"><a href="#main">Главная</a></div>
-            <a href="#about_me"><div class="header_item">Обо мне</div></a> -->            
+            <a href="#about_me"><div class="header_item">Обо мне</div></a> -->
             <!-- <a href="#portfolio"><div class="header_item">Портфолио</div></a>
             <a href="#contacts"><div class="header_item">Контакты</div></a> -->
 
@@ -67,7 +67,7 @@
 
     <a name="portfolio">
         <div class="container content portfolio desc">
-            
+
                 <div class="title">
                     <span class="line">Портфолио</span>
                 </div>
@@ -77,7 +77,7 @@
                 </div>
                 <?php include 'admin/functions/projects.php'; ?>
                 <!-- <div class="projects">
-                    
+
 
                     <div class="project">
                         <div class="image_preview"><img src="img/comingsoon.jpg" alt="comingsoon"></div>
@@ -96,7 +96,7 @@
                     </div>
 
                     <div class="project">
-                        <div class="image_preview"><img src="img/comingsoon_invert.jpg" alt="comingsoon"></div> 
+                        <div class="image_preview"><img src="img/comingsoon_invert.jpg" alt="comingsoon"></div>
                     </div>
 
                     <div class="project">
@@ -127,7 +127,7 @@
                         <div class="image_preview"><img src="img/comingsoon_invert.jpg" alt="comingsoon"></div>
                     </div>
                 </div> -->
-            
+
         </div>
     </a>
 
@@ -137,7 +137,7 @@
                 <span class="line">Контакты</span>
 
                 <div class="text">
-                    <a href="vk.com/richlex">VK</a> <br>
+                    <a href="https://vk.com/richlex">VK</a> <br>
                     <a href="vk.com/richlex">MAIL: dezy1ex@gmail.com</a>
                 </div>
             </div>
