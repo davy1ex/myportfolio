@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+a, a:active, a:visited, a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    background-color: #2D2E32;
+    height: 150px;
+}
+.header-wrapper, .whoami-wrapper {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+/*  */
+/* LOGO */
+.logo {
+    font-size: 1.5em;
+    color: #D2D2D3
+}
+.logo .myname {
+    font-weight: bold;
+    padding-right: 5px;
+    color: white;
+}
+/*  */
+/* LOGO  */
+
+
+/*  */
+/* MENU */
+.menu-nav, .menu-links, .logo {
+    display: flex;
+    flex-direction: row;
+}
+
+/* MENU ITEM */
+.menu-item:not(:last-child), .menu-link:not(:last-child) {
+    margin-right: 50px;
+}
+.menu-item .active {
+    color: #63F4AB; 
+}
+.menu-item .active:before {
+    content: "< ";
+    padding-right: 10px;
+}
+.menu-item .active:after {
+    content: "  >";
+    padding-left: 10px;
+}
+/* MENU ITEM */
+
+
+/* MENU LINKS */
+.menu-link a {
+    font-size: 0.7em;
+    vertical-align: middle;
+}
+.menu-link-icon {
+    vertical-align: middle;
+    width: 15px;
+    margin-right: 10px;
+}
+/* MENU LINKS */
+
+.email-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #333438;
+    border-radius: 100%;
+    padding: 15px;
+    text-align: center;
+    
+}
+
+.email-btn img {
+    width: 90%;
+    margin: auto;
+}
+/*  */
+/* MENU */
+
+
+
+.whoami {
+    background-color: #2D2E32;
+}
+.whoami-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.avatar img {
+    width: 400px;
+}
+
+.text-block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.to-right {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: auto;
+}
+.to-left {
+    width: 80%;
+    margin-right: auto;
+    display: flex;
+}
+
+.quote-big {
+    font-size: 3em;
+}
+.quote-small {
+    font-size: 1.1em;
+    color: #838488;
+}
+
+.time-stat {
+    display: flex;
+    height: 80px;
+}
+.count {
+    font-size: 4em;
+    padding-right: 5px;
+}
+.count-desc {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: #838488;
+    line-height: 40px;
+    /* text-align:; */
+}
