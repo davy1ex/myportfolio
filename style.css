@@ -11,6 +11,9 @@ gray: #838488
     color: white;
     font-family: 'Lato', sans-serif;
 }
+body, html {
+    width: 100%;
+}
 a, a:active, a:visited, a:hover {
     color: white;
     text-decoration: none;
@@ -24,16 +27,129 @@ header {
     background-color: #2D2E32;
     height: 20vh;
 }
-.header-wrapper, .whoami-wrapper {
-    width: 90%;
+.container {
+    max-width: 1500px;
     margin: auto;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
+header .container {
+    padding-top: 50px;
+}
 
+@media (max-width: 1700px) {
+    .container {
+        max-width: 1300px;
+    }
+    .avatar img {
+        width: 80%;
+    }
+}
+@media (max-width: 1450px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+@media (max-width: 1300px) {
+    .container {
+        max-width: 970px;
+        flex-direction: column;
+        /* padding: 20px; */
+    }
 
+    header .container {
+        height: 150px;
+    }
+
+    .count-desc {
+        line-height: 25px !important;
+    }
+
+    .menu-link a {
+        color: transparent;
+    }
+
+    .whoami {
+        height: auto !important;
+    }
+
+    .whoami .container {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .avatar img {
+        max-width: 900px !important;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 850px;
+    }
+
+    .count-desc {
+        font-size: 0.8em !important;
+        line-height: 90px !important;
+    }
+    .whoami {
+        padding-top: 30px;
+    }
+    .introduce {
+        padding-top: 70px;
+    }
+    .to-right {
+        margin: 0 !important;
+    }
+    .whoami .container {
+        flex-direction: column;
+    }
+    .to-left {
+        width: 95%;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+        width: 95%;
+    }
+    .menu-nav {
+        width: 95% !important;
+        justify-content: space-between !important;
+    }
+    .count-desc {
+        line-height: 40px !important;
+    }
+    .to-left {
+        width: 100% !important; 
+        justify-content: center !important;
+        margin: 0 !important;
+        word-wrap: break-word;
+    }
+    header .menu-item {
+        text-align: center;
+        margin: 0 !important;   
+    } 
+    .introduce .container {
+        flex-direction: column;
+        margin: 0;
+        width: 95%;
+        justify-content: center !important;
+    }
+    .list-skills {
+        align-items: center;
+        /* width:  700px; */
+    }
+    .skill {
+        padding: 25px !important;
+        width: 95% !important;
+    }
+
+    .hello {
+        margin-top: 30px;
+    }
+}
 
 /*  */
 /* LOGO */
@@ -55,6 +171,13 @@ header {
 .menu-nav, .menu-links, .logo {
     display: flex;
     flex-direction: row;
+}
+.menu-links {
+    line-height: 50px;
+}
+.email-btn {
+    margin: auto;
+    line-height: 25px;
 }
 
 /* MENU ITEM */
@@ -111,20 +234,24 @@ header {
     height: 80vh;
     
 }
-.whoami-wrapper {
+.whoami .container {
+    height: 100%;
+}
+/* .whoami-wrapper {
     display: flex;
     height: 100%;
     justify-content: center;
     align-items: center;
-}
+} */
 
 
 .text-block {
-    padding-top: 30px;
+    /* padding-top: 30px; */
     /* padding-bottom: 30px; */
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 .to-right {
     width: 80%;
@@ -174,7 +301,7 @@ header {
     text-transform: uppercase;
     font-size: 0.9em;
     color: #838488;
-    line-height: 40px;
+    line-height: 25px;
     /* text-align:; */
 }
 
@@ -187,7 +314,7 @@ header {
     flex-direction: column;
 }
 .avatar img {
-    max-width: 800px;
+    max-width: 70%;
     align-self: flex-end;
     /* position: absolute;   */
     /* position: sticky; */
@@ -202,18 +329,15 @@ header {
 /* introduce */
 .introduce {
     background-color: #25262A;
-}
-.introduce-wrapper {
-    width: 80%;
-    margin: auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
 }
 
 .list-skills {
-    width: 50%;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
+    align-items: left;
 }
 
 .skill {
@@ -254,4 +378,34 @@ header {
 .icon img {
     width: 30px;
 }
+
+
+/*  */
+/* hello */
+.introduce .container {
+    justify-content: flex-start;
+}
+.hello {
+    max-width: 550px;
+    justify-self: left;
+}
+.hello .small-title {
+    font-size: 0.8em;
+    color: #838488;
+}
+.hello .big-text {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+.hello .quote-text {
+    margin-top: 30px;
+    font-style: italic;
+    font-size: 1.5em;
+}
+.hello .desc {
+    color: #838488;
+    margin-top: 20px;
+    line-height: 30px;
+}
+/*  */
 /*  */
